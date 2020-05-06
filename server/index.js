@@ -9,7 +9,7 @@ Creates a new route handler for root '/' path using get method (request and
 response)
 ***/
 app.get("/", (req, res) => {
-  res.send({ hi: "there" });
+  res.send({ bye: "buddy" });
 });
 
 const PORT = process.env.PORT || 5000;
