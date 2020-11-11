@@ -19,6 +19,18 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
+    <link
+      href="css/materialize.css"
+      type="text/css"
+      rel="stylesheet"
+      media="screen,projection"
+    />
+    <link
+      href="css/style.css"
+      type="text/css"
+      rel="stylesheet"
+      media="screen,projection"
+    />
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -31,9 +43,10 @@
     <title>Feedback Focus</title>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
+    <main>
+      <noscript>You need to enable JavaScript to run this app.</noscript>
+      <div id="root"></div>
+      <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
 
@@ -43,5 +56,48 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+      <footer class="page-footer #ee6e73">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12" style="text-align: left;">
+              <h5 class="white-text">Developer Information</h5>
+              <p class="grey-text text-lighten-4">
+                This site developed as a Node, React, Express, and MongoDB
+                prototype by developer Martin Dwyer. More information about
+                Martin's work can be found at
+                <a class="orange-text text-lighten-1" href="mdbytes.com"
+                  >MD Web Technologies</a
+                >.
+              </p>
+            </div>
+            <div class="col l3 s12">
+              <h5 class="white-text"></h5>
+              <ul>
+                <li><a class="white-text" href="#!"></a></li>
+              </ul>
+            </div>
+            <div class="col l3 s12">
+              <h5 class="white-text"></h5>
+              <ul>
+                <li><a class="white-text" href="#!"></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container">
+            Made by
+            <a class="orange-text text-lighten-1" href="http://mdbytes.com"
+              >MD Web Technologies</a
+            >
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
   </body>
 </html>

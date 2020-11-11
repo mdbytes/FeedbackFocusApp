@@ -35,20 +35,22 @@ class Header extends Component {
   }
 
   render() {
-    const navStyle = { height: "100px", padding: "15px" };
     return (
-      <nav style={navStyle}>
-        <div className="nav-wrapper">
-          <a href="/" class="brand-logo">
-            Let's get focused!
+      <div class="nav-wrapper">
+        <nav class="#ee6e73" role="navigation">
+          <a id="logo-container" href="/" class="brand-logo">
             <i class="large material-icons">filter_center_focus</i>
           </a>
+          <ul class="right hide-on-med-and-down">{this.renderContent()}</ul>
 
-          <ul id="nav-mobile" className="right hide-on-med-and-down">
+          <ul id="nav-mobile" class="sidenav">
             {this.renderContent()}
           </ul>
-        </div>
-      </nav>
+          <a href="#" data-target="nav-mobile" class="sidenav-trigger">
+            <i class="material-icons">menu</i>
+          </a>
+        </nav>
+      </div>
     );
   }
 }
