@@ -17,6 +17,9 @@ body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
+  background-image: url("../images/site-background.jpg");
+  background-attachment: fixed;
+  background-color: #cccccc;
 }
 main {
   flex: 1 0 auto;
@@ -32,12 +35,12 @@ main {
 }
 
 #home-page-logo {
-  width: 40vw;
-  min-width: 300px;
-  max-width: 700px;
+  max-height: 60vh;
+  width: auto;
 }
 
 .page-footer {
+  background-color: #546e7a;
   position: fixed;
   left: 0;
   bottom: 0;
@@ -45,4 +48,107 @@ main {
   background-color: red;
   color: white;
   text-align: center;
+}
+
+#root > div > div.nav-wrapper > nav {
+  background-color: #546e7a;
+}
+
+#landing-page {
+
+}
+
+#landing-page h2 {
+  font-size: 500%;
+  font-weight: bolder;
+  color: #ee6e73;
+}
+
+#landing-page p {
+  font-size: 150%;
+  font-weight: bolder;
+  color: #ee6e73;
+}
+
+
+
+#survey-list-heading #list-heading {
+  font-size: 250%;
+  font-weight: bolder;
+  color: #ee6e73;
+}
+
+
+#survey-list-heading h6 {
+  font-size: 150%;
+  font-weight: bolder;
+  color: #ee6e73;
+}
+
+
+#survey-list h4 {
+  font-weight: bolder;
+  color: white;
+}
+
+#survey-list h5 {
+  font-weight: bold;
+  color: white;
+}
+
+#survey-list p {
+  font-size: 1.5em;
+}
+
+.survey-title,
+.survey-subject,
+.survey-question {
+  display: inline-block;
+  width: 180px;
+}
+
+#survey-title {
+  color: white;
+}
+
+
+
+.new-survey-display h2 {
+  text-align: center;
+  font-size: 400%;
+  font-weight: bolder;
+  color: #ee6e73;
+}
+
+.survey-form {
+  padding: 2em 5em 2em 5em;
+  background-color: white;
+  font-size: 1.5em;
+}
+
+.survey-form label {
+  font-size: 1em;  !important
+}
+
+.new-survey-review {
+
+}
+
+.new-survey-review h5 {
+  text-align: center;
+  font-size: 200%;
+  font-weight: bolder;
+  color: #ee6e73;
+}
+
+.new-survey-fields {
+  margin-top: 2em;
+  padding: 2em 5em 2em 5em;
+  background-color: white;
+  font-size: 1.5em;
+}
+
+.new-survey-fields label {
+  font-size: 1.5em: !important
+  margin: .5em 0 .5em 0; !important
 }

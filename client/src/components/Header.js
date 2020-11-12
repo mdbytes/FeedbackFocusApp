@@ -1,8 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { Link } from "react-router-dom";
 import Payments from "./Payments.js";
-import icon from "../images/ff_icon.png";
 
 class Header extends Component {
   renderContent() {
@@ -37,7 +35,7 @@ class Header extends Component {
   render() {
     return (
       <div class="nav-wrapper">
-        <nav class="#ee6e73" role="navigation">
+        <nav role="navigation">
           <a id="logo-container" href="/" class="brand-logo">
             <i class="large material-icons">filter_center_focus</i>
           </a>
@@ -46,7 +44,7 @@ class Header extends Component {
           <ul id="nav-mobile" class="sidenav">
             {this.renderContent()}
           </ul>
-          <a href="#" data-target="nav-mobile" class="sidenav-trigger">
+          <a href="/#" data-target="nav-mobile" class="sidenav-trigger">
             <i class="material-icons">menu</i>
           </a>
         </nav>
