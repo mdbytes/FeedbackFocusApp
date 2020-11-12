@@ -19,6 +19,7 @@ body {
   flex-direction: column;
   background-image: url("../images/site-background.jpg");
   background-attachment: fixed;
+  background-size: cover;
   background-color: #cccccc;
 }
 main {
@@ -35,8 +36,17 @@ main {
 }
 
 #home-page-logo {
-  max-height: 60vh;
-  width: auto;
+    display: inline-block;
+    overflow: hidden;
+    max-width: 700px;
+}
+
+.photo {
+    position: relative;
+    display:block;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 
 .page-footer {
@@ -55,6 +65,7 @@ main {
 }
 
 #landing-page {
+  margin: 0 auto;
 
 }
 
@@ -151,4 +162,21 @@ main {
 .new-survey-fields label {
   font-size: 1.5em: !important
   margin: .5em 0 .5em 0; !important
+}
+
+#tallies-to-date tr td {
+  font-size: 1.5em;
+}
+
+table {
+  width: 300px;
+}
+
+table tr td:nth-child(1) {
+  width: 50px;
+}
+
+table tr td:nth-child(2) {
+  width: 100px;
+  text-align:right;
 }

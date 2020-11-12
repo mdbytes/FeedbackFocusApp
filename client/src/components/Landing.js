@@ -2,7 +2,11 @@ import React from "react";
 import logo from "../images/ff_logo.png";
 const Landing = () => {
   return (
-    <div id="landing-page" class="white-text" style={{ textAlign: "center" }}>
+    <div
+      id="landing-page"
+      class="white-text container"
+      style={{ textAlign: "center" }}
+    >
       <h2>Feedback Focus</h2>
       <p>
         Feedback from your customers and prospects
@@ -10,8 +14,9 @@ const Landing = () => {
         ...wherever they may be.
         <br />
       </p>
-
-      <img id="home-page-logo" class="responsive-image" src={logo} alt="logo" />
+      <div id="home-page-logo">
+        <img class="responsive-image photo" src={logo} alt="logo" />
+      </div>
     </div>
   );
 };

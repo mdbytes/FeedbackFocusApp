@@ -11,7 +11,7 @@ class SurveyList extends Component {
     return this.props.surveys.reverse().map((survey) => {
       return (
         <div
-          style={{ opacity: "90%" }}
+          style={{ opacity: "95%" }}
           className="card blue-grey"
           key={survey._id}
         >
@@ -36,10 +36,16 @@ class SurveyList extends Component {
           </div>
           <div className="card-action white-text">
             <p>Answers received to date:</p>
-            <p>
-              Yes: {survey.yes} <br />
-              No: {survey.no}{" "}
-            </p>
+            <table style={{ width: "150px" }} id="tallies-to-date">
+              <tr>
+                <td>Yes: </td>
+                <td> {survey.yes.toLocaleString()} </td>
+              </tr>
+              <tr>
+                <td>No: </td>
+                <td> {survey.no.toLocaleString()} </td>
+              </tr>
+            </table>
           </div>
         </div>
       );
