@@ -125,32 +125,42 @@ main {
   padding: 2em 5em 2em 5em;
   background-color: white;
   font-size: 1.5em;
+  padding-bottom: 200px;
 }
 
 .survey-form label {
   font-size: 1em !important;
 }
 
-.new-survey-review {
+.new-survey-fields {
+  padding-bottom: 150px;
 }
 
-.new-survey-review h5 {
+.new-survey-review h2 {
   text-align: center;
-  font-size: 200%;
+  font-size: 400%;
   font-weight: bolder;
   color: #ee6e73;
 }
 
 .new-survey-fields {
   margin-top: 2em;
-  padding: 2em 5em 2em 5em;
+  padding: 2em 5em 6em 5em;
   background-color: white;
   font-size: 1.5em;
 }
 
-.new-survey-fields label {
+.review-fields {
+  font-size: 1em !important;
+  margin: 25px 0 10px 0 !important;
+}
+
+.review-fields-labels {
   font-size: 1.5em !important;
-  margin: 0.5em 0 0.5em 0 !important;
+}
+
+#review-buttons {
+  margin-top: 25px;
 }
 
 #tallies-to-date tr td {

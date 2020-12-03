@@ -1,60 +1,60 @@
-import React, { Component } from "react";
-import { connect } from "react-redux";
-import Payments from "./Payments.js";
+import React, { Component } from 'react'
+import { connect } from 'react-redux'
+import Payments from './Payments.js'
 
 class Header extends Component {
-  renderContent() {
+  renderContent () {
     switch (this.props.auth) {
       case null:
-        return;
+        return
       case false:
         return (
           <li>
-            <a href="/auth/google">Login with Google</a>
+            <a href='/auth/google'>Login with Google</a>
           </li>
-        );
+        )
 
       default:
         return [
-          <li key="1">
+          <li key='1'>
             <Payments />
           </li>,
-          <li key="3" style={{ margin: "0 10px" }}>
+          <li key='3' style={{ margin: '0 10px' }}>
             Credits: {this.props.auth.credits}
           </li>,
-          <li key="4">
-            <a href="/surveys">Surveys</a>
+          <li key='4'>
+            <a href='/surveys'>Surveys</a>
           </li>,
-          <li key="2">
-            <a href="/api/logout">Logout</a>
-          </li>,
-        ];
+          <li key='2'>
+            <a href='/api/logout'>Logout</a>
+          </li>
+        ]
     }
   }
 
-  render() {
+  render () {
     return (
-      <div class="nav-wrapper">
-        <nav role="navigation">
-          <a id="logo-container" href="/" class="brand-logo">
-            <i class="large material-icons">filter_center_focus</i>
+      <div class='nav-wrapper'>
+        <nav role='navigation'>
+          <a id='logo-container' href='/' class='brand-logo'>
+            <i class='large material-icons'>filter_center_focus</i>
           </a>
-          <ul class="right hide-on-med-and-down">{this.renderContent()}</ul>
+          <ul class='right hide-on-med-and-down'>{this.renderContent()}</ul>
 
-          <ul id="nav-mobile" class="sidenav">
+          <ul id='nav-mobile' class='sidenav'>
             {this.renderContent()}
           </ul>
-          <a href="/#" data-target="nav-mobile" class="sidenav-trigger">
-            <i class="material-icons">menu</i>
+          <a href='/#' data-target='nav-mobile' class='sidenav-trigger'>
+            <i class='material-icons'>menu</i>
           </a>
         </nav>
       </div>
-    );
+    )
   }
 }
 
-function mapStateToProps({ auth }) {
-  return { auth };
+function mapStateToProps ({ auth }) {
+  return { auth }
 }
 
-export default connect(mapStateToProps)(Header);
+export default connect(mapStateToProps)(Header)
