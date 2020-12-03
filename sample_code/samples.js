@@ -12,9 +12,9 @@
 
 const fetchAlbums = async () => {
   // fetch returns a promise
-  const res = await fetch("https://rallycoding.herokuapp.com/api/music_albums");
-  const json = await res.json();
-  console.log(json);
-};
+  const res = await fetch('https://rallycoding.herokuapp.com/api/music_albums')
+  const json = await res.json()
+  console.log(json)
+}
 
-fetchAlbums();
+fetchAlbums()
