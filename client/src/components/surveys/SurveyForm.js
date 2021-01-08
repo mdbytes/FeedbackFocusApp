@@ -22,9 +22,9 @@ class SurveyForm extends Component {
   }
   render () {
     return (
-      <div class='container new-survey-display'>
+      <div id='new-survey-display' className='container'>
         <h2>New Survey Entry</h2>
-        <div class='survey-form'>
+        <div className='survey-form'>
           <form onSubmit={this.props.handleSubmit(this.props.onSurveySubmit)}>
             {this.renderFields()}
             <Link to='/surveys' className='red btn-flat left white-text'>

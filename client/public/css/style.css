@@ -17,7 +17,7 @@ body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-  background-image: url("../images/site-background.jpg");
+  background-image: url('../images/site-background.jpg');
   background-attachment: fixed;
   background-size: cover;
   background-color: white;
@@ -45,6 +45,22 @@ main {
   max-height: 50vh;
 }
 
+.home-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10em;
+  height: 2.5em;
+  background-color: rgba(97, 97, 97, 0.8);
+  border-radius: 0.5em;
+  text-decoration: none;
+  color: white;
+  font-size: 160%;
+  font-weight: 500;
+
+  margin: 0 auto;
+}
+
 #root > div > footer {
   position: fixed;
   left: 0;
@@ -61,6 +77,22 @@ main {
   background-color: #616161;
 }
 
+nav > div > ul.right.hide-on-med-and-down {
+  text-transform: uppercase;
+}
+
+nav > div > ul.right.hide-on-med-and-down > li:nth-child(1) > span > button {
+  background-color: #616161;
+  border: none;
+  box-shadow: none;
+  font-weight: 400;
+}
+
+.dashboard {
+  background-color: white;
+  padding: 1.5em;
+}
+
 #landing-page {
   margin: 0 auto;
 }
@@ -71,36 +103,37 @@ main {
   color: #ee6e73;
 }
 
-#landing-page p {
-  font-size: 150%;
-  font-weight: bolder;
-  color: #ee6e73;
-}
-
 #survey-list-heading #list-heading {
   font-size: 250%;
   font-weight: bolder;
-  color: #ee6e73;
+  color: #616161;
 }
 
 #survey-list-heading h6 {
   font-size: 150%;
   font-weight: bolder;
-  color: #ee6e73;
+  color: #616161;
 }
 
 #survey-list h4 {
   font-weight: bolder;
-  color: white;
+  color: #616161;
 }
 
 #survey-list h5 {
   font-weight: bold;
-  color: white;
+  color: #616161;
 }
 
 #survey-list p {
   font-size: 1.5em;
+}
+
+#survey-list > div {
+  margin-bottom: 2em;
+  border-radius: 1em;
+
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 
 .survey-title,
@@ -110,11 +143,15 @@ main {
   width: 180px;
 }
 
-#survey-title {
-  color: white;
+#new-survey-display {
+  margin: 0;
+  height: 100vh;
+  padding-top: 2em;
+  background-color: #ffffff;
+  margin: 0 auto;
 }
 
-.new-survey-display h2 {
+#new-survey-display h2 {
   text-align: center;
   font-size: 400%;
   font-weight: bolder;

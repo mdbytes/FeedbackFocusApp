@@ -12,20 +12,20 @@ class SurveyList extends Component {
       return (
         <div
           style={{ opacity: '95%' }}
-          className='card blue-grey'
+          className='card list-report'
           key={survey._id}
         >
-          <div className='card-content white-text'>
+          <div className='card-content'>
             <h4>
-              <span class='survey-title white-text'>Title:</span>
+              <span className='survey-title'>Survey Title:</span>
               {survey.title}
             </h4>
             <h5>
-              <span class='survey-subject white-text'>Subject:</span>
+              <span className='survey-subject'>Survey Subject:</span>
               {survey.subject}
             </h5>
             <br />
-            <p class='survey-question'>Survey Question:</p>
+            <p className='survey-question'>Survey Question:</p>
             <br />
             <br />
             <p>{survey.body}</p>
@@ -34,7 +34,7 @@ class SurveyList extends Component {
             </p>
             <br />
           </div>
-          <div className='card-action white-text'>
+          <div className='card-action'>
             <p>Answers received to date:</p>
             <table style={{ width: '150px' }} id='tallies-to-date'>
               <tr>

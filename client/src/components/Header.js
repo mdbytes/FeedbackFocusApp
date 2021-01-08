@@ -34,19 +34,23 @@ class Header extends Component {
 
   render () {
     return (
-      <div class='nav-wrapper'>
+      <div className='nav-wrapper'>
         <nav role='navigation'>
-          <a id='logo-container' href='/' class='brand-logo'>
-            <i class='large material-icons'>filter_center_focus</i>
-          </a>
-          <ul class='right hide-on-med-and-down'>{this.renderContent()}</ul>
+          <div className='container'>
+            <a id='logo-container' href='/' className='brand-logo'>
+              <i className='large material-icons'>filter_center_focus</i>
+            </a>
+            <ul className='right hide-on-med-and-down'>
+              {this.renderContent()}
+            </ul>
 
-          <ul id='nav-mobile' class='sidenav'>
-            {this.renderContent()}
-          </ul>
-          <a href='/#' data-target='nav-mobile' class='sidenav-trigger'>
-            <i class='material-icons'>menu</i>
-          </a>
+            <ul id='nav-mobile' class='sidenav'>
+              {this.renderContent()}
+            </ul>
+            <a href='/#' data-target='nav-mobile' className='sidenav-trigger'>
+              <i className='material-icons'>menu</i>
+            </a>
+          </div>
         </nav>
       </div>
     )
