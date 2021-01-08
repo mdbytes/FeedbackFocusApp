@@ -116,31 +116,29 @@ nav > div > ul.right.hide-on-med-and-down > li:nth-child(1) > span > button {
 }
 
 #survey-list h4 {
-  font-weight: bolder;
+  font-weight: 400;
   color: #616161;
 }
 
 #survey-list h5 {
-  font-weight: bold;
+  font-weight: 400;
   color: #616161;
 }
 
 #survey-list p {
-  font-size: 1.5em;
+  font-size: 1.25em;
 }
 
 #survey-list > div {
   margin-bottom: 2em;
   border-radius: 1em;
-
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 
 .survey-title,
-.survey-subject,
-.survey-question {
+.survey-subject {
   display: inline-block;
-  width: 180px;
+  width: 250px;
 }
 
 #new-survey-display {
