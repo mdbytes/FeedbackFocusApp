@@ -1,6 +1,6 @@
 # ReactNodeExpressFullStack
 
-FeedbackFocus, a full-stack app written with React front end, Node.js, Express, and MongoDB for back-end support, is designed to authenticate users and facilitate large-scale survey email production. Some of the features of this application include:
+FeedbackFocus, a MERN full-stack app written with React front end, Node.js, Express, and MongoDB for back-end support, is designed to authenticate users and facilitate large-scale survey email production. Some of the features of this application include:
 
 1.  Usere sign up with their Google sign on, which is authenticated using the passport package.
 2.  User credentials are saved to a profile in MongoDb.
