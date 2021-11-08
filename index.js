@@ -1,5 +1,5 @@
-// important syntax for server side 'require'
-const express = require('express')
+/* important syntax for server side 'require' */
+const express = require('express');
 const mongoose = require('mongoose')
 const cookieSession = require('cookie-session')
 const passport = require('passport')
@@ -9,10 +9,14 @@ require('./models/User')
 require('./models/Survey')
 require('./services/passport')
 
-// Connect to mongodb
+/*
+ Connect to mongodb
+*/
 mongoose.connect(keys.mongoURI)
 
-// Generate a running express server app
+/*
+ Generate a running express server app
+*/
 const app = express()
 
 app.use(bodyParser.json())
